@@ -1,23 +1,18 @@
 import { motion } from "framer-motion";
-import { 
-  SiReact, SiVuedotjs, SiTypescript, SiNodedotjs, 
-  SiSalesforce, SiAmazon, SiDocker, SiPython,
-  SiTailwindcss, SiPostgresql, SiGraphql, SiFigma
+import {
+  SiOpenai, SiAnthropic, SiPython, SiLangchain,
+  SiHuggingface, SiN8N, SiMake, SiPytorch
 } from "react-icons/si";
 
 const technologies = [
-  { name: "React", icon: SiReact, color: "#61DAFB" },
-  { name: "Vue.js", icon: SiVuedotjs, color: "#4FC08D" },
-  { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-  { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-  { name: "Salesforce", icon: SiSalesforce, color: "#00A1E0" },
-  { name: "AWS", icon: SiAmazon, color: "#FF9900" },
-  { name: "Docker", icon: SiDocker, color: "#2496ED" },
+  { name: "OpenAI", icon: SiOpenai, color: "#74AA9C" },
+  { name: "Anthropic Claude", icon: SiAnthropic, color: "#D97757" },
   { name: "Python", icon: SiPython, color: "#3776AB" },
-  { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" },
-  { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
-  { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
-  { name: "Figma", icon: SiFigma, color: "#F24E1E" },
+  { name: "LangChain", icon: SiLangchain, color: "#1C3C3C" },
+  { name: "Hugging Face", icon: SiHuggingface, color: "#FFD21E" },
+  { name: "n8n", icon: SiN8N, color: "#EA4B71" },
+  { name: "Make", icon: SiMake, color: "#6D00CC" },
+  { name: "PyTorch", icon: SiPytorch, color: "#EE4C2C" },
 ];
 
 const Technologies = () => {
@@ -31,10 +26,10 @@ const Technologies = () => {
           className="text-center mb-20"
         >
           <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">
-            Stack <span className="text-transparent bg-clip-text bg-gradient-to-r from-automase-purple to-automase-blue">Tecnológico</span>
+            Stack <span className="text-transparent bg-clip-text bg-gradient-to-r from-automase-purple to-automase-blue">de IA</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Dominamos as ferramentas mais modernas para construir o futuro digital da sua empresa.
+            Trabalhamos com os modelos e ferramentas mais avançados do mercado para construir soluções de IA robustas e escaláveis.
           </p>
         </motion.div>
 
@@ -48,18 +43,18 @@ const Technologies = () => {
               whileHover={{ scale: 1.1, y: -10 }}
               className="group flex flex-col items-center justify-center p-8 rounded-3xl bg-automase-gray/20 border border-white/5 backdrop-blur-sm cursor-pointer relative"
             >
-              <div 
+              <div
                 className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl"
                 style={{ backgroundColor: tech.color }}
               />
-              
-              <tech.icon 
-                size={64} 
+
+              <tech.icon
+                size={64}
                 className="mb-4 transition-all duration-300 drop-shadow-lg"
-                style={{ color: tech.color }} 
+                style={{ color: tech.color }}
               />
-              
-              <span className="text-lg font-bold text-gray-300 group-hover:text-white transition-colors">
+
+              <span className="text-lg font-bold text-gray-300 group-hover:text-white transition-colors text-center">
                 {tech.name}
               </span>
             </motion.div>

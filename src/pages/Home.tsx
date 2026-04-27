@@ -24,14 +24,14 @@ const Home = () => {
           </h1>
         </motion.div>
         
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 font-light leading-relaxed"
         >
-          Transformando o futuro com <span className="text-automase-green font-semibold">Consultoria de Tecnologia</span> de ponta. 
-          Especialistas em Salesforce e desenvolvimento sob medida.
+          Transformamos negócios com o poder da <span className="text-automase-green font-semibold">Inteligência Artificial</span>.
+          Consultoria em IA, automações inteligentes e as tecnologias mais avançadas do mercado.
         </motion.p>
 
         <motion.div
@@ -40,21 +40,21 @@ const Home = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col md:flex-row gap-6 justify-center items-center"
         >
-          <Link 
-            to="/contato" 
+          <Link
+            to="/contato"
             className="group relative px-8 py-4 bg-transparent overflow-hidden rounded-full border border-automase-blue/50 hover:border-automase-green transition-all duration-300"
           >
             <div className="absolute inset-0 w-0 bg-automase-blue transition-all duration-[250ms] ease-out group-hover:w-full opacity-20"></div>
             <span className="relative flex items-center text-white font-display tracking-wider">
-              INICIAR PROJETO <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              FALAR COM ESPECIALISTA <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </span>
           </Link>
-          
-          <Link 
+
+          <Link
             to="/servicos"
             className="px-8 py-4 text-gray-300 hover:text-white transition-colors font-display tracking-wider border-b border-transparent hover:border-automase-purple"
           >
-            EXPLORAR SERVIÇOS
+            EXPLORAR SOLUÇÕES
           </Link>
         </motion.div>
       </div>

@@ -42,7 +42,7 @@ const Contact = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-automase-green to-automase-blue">extraordinário</span> juntos?
             </h1>
             <p className="text-xl text-gray-400 mb-12 max-w-lg">
-              Entre em contato para discutir como podemos transformar a tecnologia da sua empresa.
+              Entre em contato para discutir como a Inteligência Artificial pode transformar os processos da sua empresa.
             </p>
             
             <div className="space-y-8">
@@ -123,12 +123,12 @@ const Contact = () => {
                   className="w-full bg-automase-black/50 border border-automase-gray rounded-lg px-4 py-3 text-white focus:outline-none focus:border-automase-blue focus:ring-1 focus:ring-automase-blue transition-all"
                 >
                   <option value="">Selecione um serviço...</option>
-                  <option value="salesforce">Consultoria Salesforce</option>
-                  <option value="web">Desenvolvimento Web</option>
-                  <option value="mobile">Apps Mobile</option>
-                  <option value="backend">Sistemas Backend</option>
-                  <option value="transformation">Transformação Digital</option>
-                  <option value="custom">Software Sob Medida</option>
+                  <option value="consultoria-ia">Consultoria em IA</option>
+                  <option value="agentes-ia">Agentes de IA</option>
+                  <option value="automacoes">Automações Inteligentes</option>
+                  <option value="integracao-llm">Integração de LLMs</option>
+                  <option value="rag">RAG & Base de Conhecimento</option>
+                  <option value="ia-negocios">IA para Negócios</option>
                 </select>
                 {errors.service && <span className="text-red-500 text-sm">{errors.service.message}</span>}
               </div>

@@ -15,8 +15,8 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-gray-400 max-w-md">
-              Transformando negócios através de tecnologia de ponta e consultoria especializada. 
-              Sua porta de entrada para o futuro digital.
+              Transformamos negócios com Inteligência Artificial — consultoria, automações e agentes de IA
+              para levar sua empresa ao próximo nível.
             </p>
           </div>
           
